@@ -10,11 +10,13 @@ export interface System {
 interface SystemState {
     system: System | null;
     supplierMode: boolean;
+    protectionMode:boolean;
 }
 
 const initialState: SystemState = {
     system: null,
-    supplierMode: false
+    supplierMode: false,
+    protectionMode: false
 };
 
 const systemSlice = createSlice({
@@ -37,8 +39,11 @@ const systemSlice = createSlice({
         setSupplierMode: (state, action: PayloadAction<boolean>) => {
             state.supplierMode = action.payload;
         },
+        setProtectionMode: (state, action: PayloadAction<boolean>) => {
+            state.protectionMode = action.payload;
+        },
     },
 });
 
-export const { setSystem, setTemperature, setBalance, setSupplierMode } = systemSlice.actions;
+export const { setSystem, setTemperature, setBalance, setSupplierMode, setProtectionMode } = systemSlice.actions;
 export default systemSlice.reducer;
