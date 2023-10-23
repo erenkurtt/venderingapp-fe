@@ -32,7 +32,7 @@ const System: React.FunctionComponent = () => {
         }, 4000);
 
         return () => clearInterval(temperInterval);
-    }, [system]);
+    }, [system, increase]);
 
     return (
         <div  className="systemMain">
