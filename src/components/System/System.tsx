@@ -17,11 +17,11 @@ const System: React.FunctionComponent = () => {
         const temperInterval = setInterval(() => {
             if(system) {
                 let tempSystem = {...system};
-                if(tempSystem.temperature === 3) {
+                if(tempSystem.temperature <= 3) {
                     setIncrease(1);
                     setIsCooling(false);
                 } 
-                if(tempSystem.temperature === 7) {
+                if(tempSystem.temperature >= 7) {
                     setIncrease(-1);
                     setIsCooling(true);
                 }
