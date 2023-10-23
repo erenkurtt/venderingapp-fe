@@ -1,7 +1,7 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
-import { Process, setProcess, updateDeposit } from '../../reducers/processReducer';
+import { setProcess } from '../../reducers/processReducer';
 import '../../styles/depositure.scss';
 import { updateDemands, updateProcess, updateProduct, updateSystem } from '../../api/apiCalls';
 import { Demand, setDemands } from '../../reducers/demandReducer';
@@ -18,8 +18,6 @@ const ConrolPayment: React.FunctionComponent = () => {
     const products = useSelector((state: RootState) => state.product.products);
     const system = useSelector((state: RootState) => state.system.system);
 
-
-    const moneyUnits = [1, 5, 10, 20];
     const dispatch = useDispatch<AppDispatch>();
 
     const finishPayment = () => {

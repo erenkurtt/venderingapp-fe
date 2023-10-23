@@ -4,9 +4,8 @@ import '../../styles/product.scss';
 import { Demand, setDemands } from '../../reducers/demandReducer';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
-import { Process, updateDeposit } from '../../reducers/processReducer';
 import { setProduct } from '../../reducers/productReducer';
-import { updateDemands, updateProcess, updateProduct } from '../../api/apiCalls';
+import { updateDemands, updateProduct } from '../../api/apiCalls';
 
 interface ProdProps {
     product: Product

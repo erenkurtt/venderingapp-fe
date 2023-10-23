@@ -1,8 +1,7 @@
 import  React, { useCallback } from 'react';
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
-import {Process, updateDeposit} from '../../reducers/processReducer';
+import { updateDeposit} from '../../reducers/processReducer';
 import '../../styles/depositure.scss';
 import { updateProcess } from '../../api/apiCalls';
 

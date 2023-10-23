@@ -1,12 +1,10 @@
-import React, { useCallback } from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
-import { Process, updateDeposit } from '../../reducers/processReducer';
 import '../../styles/demand.scss';
-import { updateDemands, updateProcess, updateProduct } from '../../api/apiCalls';
+import { updateDemands, updateProduct } from '../../api/apiCalls';
 import { Demand, setDemands } from '../../reducers/demandReducer';
-import { Product, setProduct } from '../../reducers/productReducer';
+import { setProduct } from '../../reducers/productReducer';
 import ConrolPayment from './ControlPayment';
 
 

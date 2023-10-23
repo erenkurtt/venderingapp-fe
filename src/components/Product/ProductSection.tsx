@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState, AppDispatch } from '../../store/store';
 import ProductItem from './ProductItem';
 import '../../styles/product.scss';
-import { System, setBalance, setSystem } from '../../reducers/systemReducer';
+import { System, setSystem } from '../../reducers/systemReducer';
 import { updateSystem } from '../../api/apiCalls';
 
 
