@@ -1,0 +1,47 @@
+.depositMain{
+    padding: 20px;
+}
+
+.buttonParent {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2%;
+
+    .moneyButtons {
+        padding: 10px;
+        outline: none;
+        border-radius: 10px;
+        font-size: 16px;
+        border: 1px solid #c5c5c5;
+        transition: .3s;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .moneyButtons:hover {
+        background-color: #c5c5c5;
+    }
+}
+
+.depositCount {
+    border: 1px solid #c5c5c5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.paymentButtons {
+    outline: none;
+    border: 1px solid rgb(204, 208, 212);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    margin: 10px 10px 10px 0;
+}
+
+.paymentButtons:hover {
+    background-color: rgb(204, 208, 212);
+}

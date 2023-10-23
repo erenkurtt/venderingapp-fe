@@ -1,0 +1,56 @@
+.productItem {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+
+    .productButtonParent {
+        display: flex;
+        flex-direction: column;
+        .productButton {
+            padding: 15px;
+            outline: none;
+            border: 1px solid rgb(204, 208, 212);
+            border-radius: 10px;
+            width: fit-content;
+            cursor: pointer;
+            transition: .3s;
+        
+            .productImg {
+                width: 100px;
+                height: 180px;
+            }
+        }
+
+        .productButton:hover {
+            background-color: rgb(204, 208, 212);
+        }
+
+        .productInfoText {
+            margin: 6px 0 0 0;
+            text-align: center;
+        }
+
+        .productSettingsMain{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+    
+            .productItemInput {
+                width: 100px;
+                margin: 5px;
+            }
+
+            .productItemInputBtn {
+                width: 100px;
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+

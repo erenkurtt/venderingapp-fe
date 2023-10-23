@@ -1,0 +1,24 @@
+
+.demandSectionMain {
+    padding: 20px;
+
+    .demandItemMain {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 10px;
+    
+        .demandItem {
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .totalSection {
+        font-weight: 500;
+        font-size: 24px;
+        text-align: right;
+        margin-top: 30px;
+    }
+}
+
